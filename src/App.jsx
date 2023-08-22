@@ -7,6 +7,7 @@ function App() {
 
   return (
     <>
+      <>NavBar</>
       <h1>FASTERCLICK</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
