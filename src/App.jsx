@@ -1,7 +1,6 @@
 import { useState } from 'react'
 // eslint-disable-next-line no-unused-vars
 import viteLogo from '/vite.svg'
-import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
