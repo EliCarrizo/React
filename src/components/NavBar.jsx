@@ -10,7 +10,7 @@ import {
 
 const NavBar = () => {
   return (
-    <div>
+    <div className='body'>
         <div>
             <h1>Faster Click Store 🖱</h1>
         </div>
