@@ -6,7 +6,7 @@ const App = () => {
   return (
     <>
       <Navbar/>
-      <ItemListContainer greeting={"Welcome"}/>
+      <ItemListContainer greeting={"Welcome to the store 🖐🏻😊"}/>
     </>
   )
 }
