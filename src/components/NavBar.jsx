@@ -11,7 +11,7 @@ import {
 const NavBar = () => {
   return (
     <div>
-        <Menu className=''>
+        <Menu>
             <h1>Faster cLICK</h1>
             <MenuButton>
                 Skus
