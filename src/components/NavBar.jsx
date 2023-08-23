@@ -4,26 +4,31 @@ import {
     MenuButton,
     MenuList,
     MenuItem,
+
   } from '@chakra-ui/react'
 
-const Navbar = () => {
+const NavBar = () => {
   return (
     <div>
         <Menu>
-            {({ isOpen }) => (
-            <>
-                <MenuButton isActive={isOpen} as={Button} rightIcon={<ChevronDownIcon />}>
-                {isOpen ? 'Close' : 'Open'}
-                </MenuButton>
-                <MenuList>
-                <MenuItem>Download</MenuItem>
-                <MenuItem onClick={() => alert('Kagebunshin')}>Create a Copy</MenuItem>
-                </MenuList>
-            </>
-            )}
+            <h1>Faster cLICK</h1>
+            <MenuButton>
+                Skus
+            </MenuButton>
+            <MenuList>
+                <MenuItem>
+                    Category A
+                </MenuItem>
+                <MenuItem>
+                    Category B
+                </MenuItem>
+                <MenuItem>
+                    Category C
+                </MenuItem>
+            </MenuList>
         </Menu>
     </div>
   )
 }
 
-export default Navbar
+export default NavBar

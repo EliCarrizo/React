@@ -1,23 +1,10 @@
-import { useState } from 'react'
-// eslint-disable-next-line no-unused-vars
-import viteLogo from '/vite.svg'
+import Navbar from './components/Navbar'
 
-function App() {
-  const [count, setCount] = useState(0)
+const App = () => {
 
   return (
     <>
-      <>NavBar</>
-      <h1>FASTERCLICK</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Choose 1 sku
-        </p>
-      </div>
-      <p className="read-the-docs">check</p>
+      <Navbar/>
     </>
   )
 }
