@@ -6,11 +6,12 @@ import {
     MenuItem,
 
   } from '@chakra-ui/react'
+  import CartWidget from './CartWidget'
 
 const NavBar = () => {
   return (
     <div>
-        <Menu>
+        <Menu className='title'>
             <h1>Faster cLICK</h1>
             <MenuButton>
                 Skus
@@ -26,6 +27,7 @@ const NavBar = () => {
                     Category C
                 </MenuItem>
             </MenuList>
+            <CartWidget/>
         </Menu>
     </div>
   )
