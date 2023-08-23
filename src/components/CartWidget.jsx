@@ -6,7 +6,7 @@ const CartWidget = () => {
         <span className="material-symbols-outlined">
             shopping_cart
         </span>
-        <p>
+        <p className='text'>
             5
         </p>
     </div>

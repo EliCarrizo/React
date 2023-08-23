@@ -12,10 +12,10 @@ const NavBar = () => {
   return (
     <div className='body'>
         <div>
-            <h1>Faster Click Store 🖱</h1>
+            <h1 className='title'>Faster Click Store 🖱</h1>
         </div>
             <Menu>
-                <MenuButton>
+                <MenuButton className='text'>
                     Skus
                 </MenuButton>
                     <MenuList>
