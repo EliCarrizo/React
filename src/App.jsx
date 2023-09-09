@@ -5,8 +5,8 @@ const App = () => {
 
   return (
     <>
-      <Navbar/>
-      <ItemListContainer classname='title' greeting={"Welcome to the store 🖐🏻😊"}/>
+      <Navbar />
+      { <ItemListContainer classname='title' greeting={"Welcome to the store 🖐🏻😊"}/> }
     </>
   )
 }
