@@ -1,9 +1,39 @@
-import React from 'react'
+import React from 'react';
+import {Card, CardHeader, CardBody, CardFooter, Heading, Text, Center} from '@chakra-ui/react';
+import itemCount from './itemCount';
+import { useParams } from 'react-router-dom'
 
-const ItemDetail = () => {
+const ItemDetail = ({ productos }) => {
+  const { id } = useParams ()
+
+  const filteredProducts = productos.filter((producto) => producto.id == id)
+
+
   return (
-    <div>ItemDetail</div>
-  )
+      <div>
+        {filteredProducts.map((p) => {
+
+          return (
+            <div key={p.id}>
+              <Center>
+                <Card>
+                  <CardHeader>
+                    <Heading>{p.nombre}</Heading>
+                  </CardHeader>
+                  <CardBody>
+                    <Text>{p.description}</Text>
+                    <Text>{p.category}</Text>
+                  </CardBody>
+                  <CardFooter>
+                    <itemCount />
+                  </CardFooter>
+                </Card>
+              </Center>
+            </div>
+          )
+        })}
+      </div>
+    )
 }
 
-export default ItemDetail
+export default React.memo(ItemDetail);
