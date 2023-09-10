@@ -1,4 +1,3 @@
-import React from 'react'
 import {
     Menu,
     MenuButton,
@@ -7,6 +6,7 @@ import {
 
   } from '@chakra-ui/react'
   import CartWidget from './CartWidget'
+  import { Link } from 'react-router-dom'
 
 const NavBar = () => {
   return (
@@ -20,13 +20,19 @@ const NavBar = () => {
                 </MenuButton>
                     <MenuList>
                         <MenuItem>
-                            Category A
+                            <link to={`/categoria/${"A"}`}>
+                            Categoria A
+                            </link>
                         </MenuItem>
                         <MenuItem>
-                            Category B
+                            <link to={`/categoria/${"B"}`}>
+                            Categoria B
+                            </link>
                         </MenuItem>
                         <MenuItem>
-                            Category C
+                            <link to={`/categoria/${"C"}`}>
+                            Categoria C
+                            </link>
                         </MenuItem>
                     </MenuList>
             </Menu>
