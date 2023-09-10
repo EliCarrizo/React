@@ -8,24 +8,24 @@ const item = ({producto}) => {
 
   return (
     <div>
-      <card>
+      <Card>
         <CardBody>
           src={producto.Image}
           <Stack>
             <Heading>{producto.nombre}</Heading>
-            <text>check
-            </text>
+            <Text>check
+            </Text>
           </Stack>
         </CardBody>
         <Divider />
         <CardFooter>
           <ButtonGroup>
-            <button>
+            <Button>
               <link to={`/item/${producto.id}`}>Detalle</link>
-            </button>
+            </Button>
           </ButtonGroup>
         </CardFooter>
-      </card>
+      </Card>
     </div>
   )
 }

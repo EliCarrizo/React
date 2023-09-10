@@ -23,30 +23,31 @@ const ItemListContainer = () => {
       } else {
           reject(new Error("No hay datos registrados"))
       }
-  })
-
-
-  getProductos
-    .then((res) => {
     })
-    .catch((error) => {
-        console.log(error)
-    })
-  }
 
-  const filteredProducts = productos.filter((producto) => producto.categoria === categoria)
-  return (
-      <>
-        {
-          categoria ? <ItemList productos ={filteredProducts} /> : <ItemList productos={productos}/>
-        }
 
-      </>
-  )
-/*const ItemListContainer = ({greeting}) => {
-  return (
-    <h1>{greeting}</h1>
-  )
-}*/
+    getProductos
+      .then((res) => {
+      })
+      .catch((error) => {
+          console.log(error)
+      })
+
+
+    const filteredProducts = productos.filter((producto) => producto.categoria === categoria)
+      return (
+          <>
+            {
+              categoria ? <ItemList productos ={filteredProducts} /> : <ItemList productos={productos}/>
+            }
+
+          </>
+      )
+}
+  /*const ItemListContainer = ({greeting}) => {
+    return (
+      <h1>{greeting}</h1>
+    )
+  }*/
 
 export default ItemListContainer

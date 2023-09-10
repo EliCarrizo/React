@@ -1,5 +1,5 @@
 import React from 'react'
-import Item from '.Item'
+import Item from './Item'
 
 const ItemList = ({ productos }) => {
 
@@ -7,7 +7,7 @@ const ItemList = ({ productos }) => {
   return (
         <div>
             {
-                productos.map((p)) => {
+                productos.map((p) => {
                     return (
                         <>
                             <Item producto={p} key={p.id}
@@ -17,7 +17,7 @@ const ItemList = ({ productos }) => {
                 })
             }
         </div>
-  )
+    )
 }
 
 export default ItemList
