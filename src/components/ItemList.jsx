@@ -5,18 +5,18 @@ const ItemList = ({ productos }) => {
 
 
   return (
-        <div>
-            {
-                productos.map((p) => {
-                    return (
-                        <>
-                            <Item producto={p} key={p.id}
-                            />
-                        </>
-                    )
-                })
-            }
-        </div>
+    <div>
+        {
+            productos.map((p) => {
+                return (
+                    <>
+                        <Item producto={p} key={p.id}
+                        />
+                    </>
+                )
+            })
+        }
+    </div>
     )
 }
 

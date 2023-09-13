@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Button, Stack, Box } from '@chakra-ui/react'
 
 
-const itemCount = () => {
+const ItemCount = () => {
 
     const [contador, setContador] = useState(0)
 
@@ -27,4 +27,4 @@ const itemCount = () => {
   )
 }
 
-export default itemCount
+export default ItemCount

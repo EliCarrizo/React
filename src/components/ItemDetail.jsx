@@ -1,6 +1,6 @@
 import React from 'react';
 import {Card, CardHeader, CardBody, CardFooter, Heading, Text, Center} from '@chakra-ui/react';
-import itemCount from './itemCount';
+import ItemCount from './ItemCount';
 import { useParams } from 'react-router-dom'
 
 const ItemDetail = ({ productos }) => {

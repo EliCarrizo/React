@@ -10,6 +10,7 @@ import {
 
 const NavBar = () => {
   return (
+
     <div className='body'>
         <div>
             <h1 className='title'>Faster Click Store 🖱</h1>
@@ -20,19 +21,19 @@ const NavBar = () => {
                 </MenuButton>
                     <MenuList>
                         <MenuItem>
-                            <link to={`/categoria/${"A"}`}>
+                            <Link to={`/categoria/${"A"}`}>
                             Categoria A
-                            </link>
+                            </Link>
                         </MenuItem>
                         <MenuItem>
-                            <link to={`/categoria/${"B"}`}>
+                            <Link to={`/categoria/${"B"}`}>
                             Categoria B
-                            </link>
+                            </Link>
                         </MenuItem>
                         <MenuItem>
-                            <link to={`/categoria/${"C"}`}>
+                            <Link to={`/categoria/${"C"}`}>
                             Categoria C
-                            </link>
+                            </Link>
                         </MenuItem>
                     </MenuList>
             </Menu>
