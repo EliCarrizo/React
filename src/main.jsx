@@ -1,12 +1,25 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App'
-import { ChakraProvider } from '@chakra-ui/react'
-import './main.css'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App';
+import { ChakraProvider } from '@chakra-ui/react';
+import './main.css';
 
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-    <ChakraProvider>
+const rootElement = document.getElementById('root');
+
+const app = (
+
+     <ChakraProvider>
       <App />
     </ChakraProvider>
-)
+
+);
+
+ReactDOM.createRoot(rootElement).render(app);
+
+
+
+
+
+
+
