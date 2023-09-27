@@ -1,8 +1,7 @@
 import React from 'react'
 import { Card, Image, Stack, Text, CardBody, Divider, Button, ButtonGroup, CardFooter, Heading  } from '@chakra-ui/react'
-
-
-const item = ({producto}) => {
+import { Link } from 'react-router-dom'
+const Item = ({ producto }) => {
 
     console.log (producto)
 
@@ -10,7 +9,9 @@ const item = ({producto}) => {
     <div>
       <Card>
         <CardBody>
-          src={producto.Image}
+          <Image
+          src={producto.image}
+          />
           <Stack>
             <Heading>{producto.nombre}</Heading>
             <Text>check
@@ -21,7 +22,7 @@ const item = ({producto}) => {
         <CardFooter>
           <ButtonGroup>
             <Button>
-              <link to={`/item/${producto.id}`}>Detalle</link>
+              <Link to={`/item/${producto.id}`}>Detalle</Link>
             </Button>
           </ButtonGroup>
         </CardFooter>
@@ -30,4 +31,4 @@ const item = ({producto}) => {
   )
 }
 
-export default item
+export default Item
