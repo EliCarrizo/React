@@ -4,8 +4,8 @@ import ItemDetail from './ItemDetail'
 const ItemDetailContainer = () => {
 
     const productos = [
-        {id: 1, nombre:"Producto A", descripcion: "Descripcion del producto A", stock: 10, categoria: "A"},
-        {id: 1, nombre:"Producto A", descripcion: "Descripcion del producto B", stock: 15,categoria: "B"},
+        {id: 1, nombre:"GOKU", descripcion: "Descripcion del producto A", stock: 10, categoria: "A"},
+        {id: 1, nombre:"VEGETTA", descripcion: "Descripcion del producto B", stock: 15,categoria: "B"},
         {id: 1, nombre:"Producto A", descripcion: "Descripcion del producto C", stock: 4, categoria: "C"},
         {id: 1, nombre:"Producto A", descripcion: "Descripcion del producto D", stock: 60, categoria: "D"},
         {id: 1, nombre:"Producto A", descripcion: "Descripcion del producto E", stock: 100, categoria: "E"},
