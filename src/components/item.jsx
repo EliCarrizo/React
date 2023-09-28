@@ -14,7 +14,7 @@ const Item = ({ producto }) => {
           />
           <Stack>
             <Heading>{producto.nombre}</Heading>
-            <Text>check
+            <Text>Some text
             </Text>
           </Stack>
         </CardBody>

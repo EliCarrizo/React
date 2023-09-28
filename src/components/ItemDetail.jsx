@@ -3,6 +3,7 @@ import {Card, CardHeader, CardBody, CardFooter, Heading, Text, Center} from '@ch
 import ItemCount from './ItemCount';
 import { useParams } from 'react-router-dom'
 
+
 const ItemDetail = ({ productos }) => {
   const { id } = useParams ()
 
@@ -25,7 +26,7 @@ const ItemDetail = ({ productos }) => {
                     <Text>{p.category}</Text>
                   </CardBody>
                   <CardFooter>
-                    <ItemCount />
+                    <ItemCount initial={1} max={10}/>
                   </CardFooter>
                 </Card>
               </Center>

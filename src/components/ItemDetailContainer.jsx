@@ -4,12 +4,12 @@ import ItemDetail from './ItemDetail'
 const ItemDetailContainer = () => {
 
     const productos = [
-        {id: 1, nombre:"GOKU", descripcion: "Descripcion del producto A", stock: 10, categoria: "A"},
-        {id: 1, nombre:"VEGETTA", descripcion: "Descripcion del producto B", stock: 15,categoria: "B"},
-        {id: 1, nombre:"Producto A", descripcion: "Descripcion del producto C", stock: 4, categoria: "C"},
-        {id: 1, nombre:"Producto A", descripcion: "Descripcion del producto D", stock: 60, categoria: "D"},
-        {id: 1, nombre:"Producto A", descripcion: "Descripcion del producto E", stock: 100, categoria: "E"},
-        {id: 1, nombre:"Producto A", descripcion: "Descripcion del producto F", stock: 2, categoria: "F"},
+        {id: 1, nombre:"GOKU", descripcion: "It is a the best", stock: 10, categoria: "A"},
+        {id: 2, nombre:"VEGETTA", descripcion: "Descripcion del producto B", stock: 15,categoria: "B"},
+        {id: 3, nombre:"CELL", descripcion: "Descripcion del producto C", stock: 4, categoria: "C"},
+        {id: 4, nombre:"BULMA", descripcion: "Descripcion del producto D", stock: 60, categoria: "D"},
+        {id: 5, nombre:"SEIYA", descripcion: "Descripcion del producto E", stock: 100, categoria: "E"},
+        {id: 6, nombre:"ANDROMEDA", descripcion: "Descripcion del producto F", stock: 2, categoria: "F"},
     ]
 
     const getProductos = new Promise((resolve, reject) => {
@@ -29,6 +29,7 @@ const ItemDetailContainer = () => {
         .catch((error) => {
             console.log(error)
         })
+    console.log(productos)
 
     return (
         <>
