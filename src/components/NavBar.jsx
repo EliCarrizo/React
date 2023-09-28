@@ -14,10 +14,11 @@ const NavBar = () => {
     <div className='body'>
         <div>
             <h1 className='title'>Faster Click Store 🖱</h1>
+            <h2>The way to buy all the Anime STUFFS</h2>
         </div>
             <Menu>
                 <MenuButton className='text'>
-                    Skus
+                    PRODUCTOS
                 </MenuButton>
                     <MenuList>
                         <MenuItem>

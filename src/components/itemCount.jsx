@@ -6,11 +6,16 @@ const ItemCount = () => {
 
     const [contador, setContador] = useState(0)
 
-  return (
+    const onAdd = () => {
+
+        setContador(contador + 1);
+    }
+
+ return (
         <>
         <Stack>
             <Box>
-                <Button onClick={() => setContador(contador + 1)}>
+                <Button onClick={onAdd}>
                     +
                 </Button>
             </Box>
@@ -24,7 +29,9 @@ const ItemCount = () => {
             </Box>
         </Stack>
     </>
+
   )
-}
+
+ }
 
 export default ItemCount
