@@ -27,6 +27,7 @@ const ItemCount = () => {
                     -
                 </Button>
             </Box>
+            <Button>Agregar al 🛒</Button>
         </Stack>
     </>
 
